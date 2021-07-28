@@ -18,6 +18,9 @@ $(function(){
     });
     // GNB 끝(세로형 2열)
 
+
+
+    // 슬라이드쇼 시작
     setInterval(fnSlide, 3000);
     
     // slideshow (세로형)
@@ -56,5 +59,18 @@ $(function(){
             );
         $("#slide a").eq(1).fadeIn(1000)
     }
+    // 슬라이드쇼 끝
+
+
+    // 레이어 팝업 시작
+    $("tr#popPoint").click(function(){
+        $("div#layerBG").css("display", "block");
+    });
+    $("#closeBtnArea>button").click(function(){
+        $("div#layerBG").css("display", "none");
+    });
+    // 레이어 팝업 끝
+
+
 
 });
